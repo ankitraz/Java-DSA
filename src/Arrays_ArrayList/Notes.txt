@@ -1,0 +1,17 @@
+ArrayList -
+it is basically a resizable array whose size may not be initialized
+explicitly. It is a dynamic array. It is a collection of objects.
+
+Its declaration is:
+ArrayList <datatype> name = new ArrayList <datatype>();
+
+Arrays vs ArrayLists
+- Arrays are fixed in size, ArrayLists are not
+- Arrays can only store one type of data, ArrayLists can store multiple
+- Arrays are faster, ArrayLists are slower
+- Arrays are more efficient, ArrayLists are less efficient
+- Arrays are more secure, ArrayLists are less secure
+- Arrays are more flexible, ArrayLists are less flexible
+- ArrayLists are more useful than arrays because they are dynamic and
+can store multiple types of data.
+- it can be used when you don't know the size of array or the number of ELEMENT in array.

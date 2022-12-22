@@ -1,0 +1,4 @@
+-What are linked list?
+Soln -
+
+Every single box is known as node in linked list.

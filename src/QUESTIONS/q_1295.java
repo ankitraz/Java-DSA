@@ -1,5 +1,7 @@
 package QUESTIONS;
 
+
+//find even no of digits
 public class q_1295 {
     public static void main(String[] args) {
         int[] arr = {1, 2422, 76, 569098};

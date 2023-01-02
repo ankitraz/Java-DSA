@@ -12,23 +12,23 @@ public class q_1672 {
 
     static int maximumWealth(int[][] account){
         int[] arr = new int[account.length];
-        for (int i = 0; i < account.length; i++) {
+        for (int row = 0; row < account.length; row++) {
             int temp = 0;
-            for (int j = 0; j < account[i].length; j++) {
-                temp = temp + account[i][j];
+            for (int col = 0; col < account[row].length; col++) {
+                temp = temp + account[row][col];
             }
-            arr[i] = temp;
+            arr[row] = temp;
         }
         return maxNo(arr);
     }
-
     static int maxNo(int[] arr){
         int temp = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]>temp){
-                temp = arr[i];
+        for (int j : arr) {
+            if (j > temp) {
+                temp = j;
             }
         }
         return temp;
     }
 }
+

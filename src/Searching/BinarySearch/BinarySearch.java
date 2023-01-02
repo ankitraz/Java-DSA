@@ -3,13 +3,15 @@ package Searching.BinarySearch;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {1,3,4,7,8,10};
-        int[] arr1 = {98,46,23,11,2,1};
+//        int[] arr1 = {98,46,23,11,2,1};
 
-        System.out.println(orderAgnostics(arr1, 11));
+
+
+//        System.out.println(orderAgnostics(arr1, 11));
 
     }
 
-    static int binarysearch(int[] arr, int target){
+    public static int binarysearchforascending(int[] arr, int target){
         int start = 0;
         int end = arr.length-1;
         while(start<=end){
@@ -24,7 +26,7 @@ public class BinarySearch {
         }
         return -1;
     }
-    static int binarysearchfordecending(int[] arr, int target){
+    public static int binarysearchfordecending(int[] arr, int target){
         int start = 0;
         int end = arr.length-1;
         while(start<=end){
@@ -45,7 +47,7 @@ public class BinarySearch {
             return binarysearchfordecending(arr,target);
         }
         else if (arr[0] < arr[arr.length-1]){ // it meant our array is sorted in ascending order.
-            return binarysearch(arr,target);
+            return binarysearchforascending(arr,target);
         }
         return -1;
     }
